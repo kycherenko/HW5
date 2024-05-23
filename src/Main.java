@@ -6,17 +6,18 @@ public class Main {
         } else if (clientOS == 0) {
             System.out.println("Установите версию приложения для iOS по ссылке");
         }
+        {
 
-        int clientDeviceYear = 2015;
-        int clientOs = 0;
-        if (clientOs == 1 && clientDeviceYear >= 2015) {
-            System.out.println("Установите версию приложения для Android по ссылке");
-        } else if (clientOs == 1 && clientDeviceYear < 2015) {
-            System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else if (clientOs == 0 && clientDeviceYear >= 2015) {
-            System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (clientOs == 0 && clientDeviceYear <2015) {
-            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+            int clientDeviceYear = 2015;
+            if (clientOS == 1 && clientDeviceYear >= 2015) {
+                System.out.println("Установите версию приложения для Android по ссылке");
+            } else if (clientOS == 1 && clientDeviceYear < 2015) {
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            } else if (clientOS == 0 && clientDeviceYear >= 2015) {
+                System.out.println("Установите версию приложения для iOS по ссылке");
+            } else if (clientOS == 0 && clientDeviceYear < 2015) {
+                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+            }
         }
 
         int year = 2021;
